@@ -15,6 +15,7 @@ Either make sure you're running a version of node compliant with the `engines` r
 ## Installation
 
 Run
+
 ```bash
 npm install
 ```
@@ -51,4 +52,9 @@ export NETWORK="rinkeby"
 node scripts/mint.js
 ```
 
-Note: When running the minting script on mainnet, your environment variable needs to be set to `mainnet` not `live`.  The environment variable affects the Infura URL in the minting script, not truffle. When you deploy, you're using truffle and you need to give truffle an argument that corresponds to the naming in truffle.js (`--network live`).  But when you mint, you're relying on the environment variable you set to build the URL (https://github.com/ProjectOpenSea/opensea-creatures/blob/master/scripts/mint.js#L54), so you need to use the term that makes Infura happy (`mainnet`).  Truffle and Infura use the same terminology for Rinkeby, but different terminology for mainnet.  If you start your minting script, but nothing happens, double check your environment variables.
+Note: When running the minting script on mainnet, your environment variable needs to be set to `mainnet` not `live`. The environment variable affects the Infura URL in the minting script, not truffle. When you deploy, you're using truffle and you need to give truffle an argument that corresponds to the naming in truffle.js (`--network live`). But when you mint, you're relying on the environment variable you set to build the URL (https://github.com/ProjectOpenSea/opensea-creatures/blob/master/scripts/mint.js#L54), so you need to use the term that makes Infura happy (`mainnet`). Truffle and Infura use the same terminology for Rinkeby, but different terminology for mainnet. If you start your minting script, but nothing happens, double check your environment variables.
+
+--- Majid ---
+Token : https://rinkeby.opensea.io/assets/majidtoken
+
+Account: https://rinkeby.opensea.io/accounts/0xd9cc3ed61ef76e382d6f7b59329662b0cbc3afd6

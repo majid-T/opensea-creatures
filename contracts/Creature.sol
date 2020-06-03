@@ -11,7 +11,7 @@ import "@openzeppelin/contracts/ownership/Ownable.sol";
 contract Creature is TradeableERC721Token {
     constructor(address _proxyRegistryAddress)
         public
-        TradeableERC721Token("Majid Token", "MATC", _proxyRegistryAddress)
+        TradeableERC721Token("MajidToken", "MATC", _proxyRegistryAddress)
     {}
 
     function baseTokenURI() public view returns (string memory) {
